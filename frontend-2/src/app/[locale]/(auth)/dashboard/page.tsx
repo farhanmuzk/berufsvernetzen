@@ -1,22 +1,10 @@
-import { getTranslations } from 'next-intl/server';
+import { Content } from '@/components/home/content';
+import React from 'react'
 
-import { Hello } from '@/components/Hello';
+type Props = {}
 
-export async function generateMetadata(props: { params: { locale: string } }) {
-  const t = await getTranslations({
-    locale: props.params.locale,
-    namespace: 'Dashboard',
-  });
-
-  return {
-    title: t('meta_title'),
-  };
+const DashboardPage = () => {
+    return <Content />;
 }
 
-const Dashboard = () => (
-  <div className="[&_p]:my-6">
-    <Hello />
-  </div>
-);
-
-export default Dashboard;
+export default DashboardPage
