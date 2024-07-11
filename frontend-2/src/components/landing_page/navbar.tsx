@@ -110,7 +110,7 @@ export default function NavBar() {
           </Button>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} variant="light" href="https://survey.mhmdaris15.tech/">
+          <Button as={Link} variant="light" href="/form/surveys">
             Surveys
           </Button>
         </NavbarItem>

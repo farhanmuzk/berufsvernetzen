@@ -32,7 +32,7 @@
     "@hookform/resolvers": "^3.6.0",
     "@logtail/pino": "^0.4.22",
     "@nextui-org/react": "^2.4.2",
-    "@sentry/nextjs": "^7.118.0",
+    "@sentry/nextjs": "^8.17.0",
     "@spotlightjs/spotlight": "^1.2.17",
     "@t3-oss/env-nextjs": "^0.10.1",
     "clsx": "^2.1.1",
@@ -52,6 +52,8 @@
     "react-hot-toast": "^2.4.1",
     "react-icons": "^5.2.1",
     "sharp": "^0.33.4",
+    "survey-core": "^1.11.6",
+    "survey-react-ui": "^1.11.6",
     "zod": "^3.23.8"
   },
   "devDependencies": {

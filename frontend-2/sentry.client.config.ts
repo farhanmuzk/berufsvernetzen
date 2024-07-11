@@ -2,12 +2,10 @@
 // The config you add here will be used whenever a users loads a page in their browser.
 // https://docs.sentry.io/platforms/javascript/guides/nextjs/
 
-import * as Sentry from '@sentry/nextjs';
-import * as Spotlight from '@spotlightjs/spotlight';
+import * as Sentry from "@sentry/nextjs";
 
 Sentry.init({
-  // FIXME: Add your Sentry DSN
-  // dsn: '___DSN___',
+  dsn: "https://2901932be5380cd01fcffd0d2b800513@o4507585461026816.ingest.de.sentry.io/4507585469481040",
 
   // Adjust this value in production, or use tracesSampler for greater control
   tracesSampleRate: 1,
@@ -30,7 +28,3 @@ Sentry.init({
     }),
   ],
 });
-
-if (process.env.NODE_ENV === 'development') {
-  Spotlight.init();
-}

@@ -4,7 +4,6 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 
-import { DemoBadge } from "@/components/DemoBadge";
 import { AppConfig } from "@/utils/AppConfig";
 import { Providers } from "../providers";
 
@@ -51,7 +50,6 @@ export default function RootLayout(props: {
           messages={messages}
         >
           <Providers>{props.children}</Providers>
-          <DemoBadge />
         </NextIntlClientProvider>
       </body>
     </html>

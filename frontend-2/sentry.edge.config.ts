@@ -3,20 +3,10 @@
 // Note that this config is unrelated to the Vercel Edge Runtime and is also required when running locally.
 // https://docs.sentry.io/platforms/javascript/guides/nextjs/
 
-import * as Sentry from '@sentry/nextjs';
+import * as Sentry from "@sentry/nextjs";
 
 Sentry.init({
-  // FIXME: Add your Sentry DSN
-  // dsn: '___DSN___',
-
-  // Enable Spotlight in development
-  spotlight: process.env.NODE_ENV === 'development',
-
-  ignoreErrors: [
-    // Workaround for React RSC and Suspense boundaries: https://github.com/amannn/next-intl/issues/614#issuecomment-1862508393
-    // Can be removed once the change is integrated into Sentry SDK.
-    "This is not a real error! It's an implementation detail of `use`",
-  ],
+  dsn: "https://2901932be5380cd01fcffd0d2b800513@o4507585461026816.ingest.de.sentry.io/4507585469481040",
 
   // Adjust this value in production, or use tracesSampler for greater control
   tracesSampleRate: 1,

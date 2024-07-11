@@ -77,7 +77,7 @@ export default function Hero() {
             </p>
             <div className="items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
               <motion.div whileHover={{ scale: 1.05 }}>
-                <Button onPress={onOpen} color="primary" variant="solid">
+                <Button onPress={onOpen} color="primary" variant="flat">
                   Get Started
                 </Button>
               </motion.div>
