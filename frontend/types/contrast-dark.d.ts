@@ -1,1 +1,0 @@
-declare module 'survey-core/themes/contrast-dark';
