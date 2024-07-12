@@ -42,12 +42,12 @@ export default function NavBar() {
       <NavbarContent className="hidden sm:flex gap-5" justify="center">
         <NavbarBrand>
           <span className="font-bold text-2xl flex gap-3 justify-center items-center">
-          Berufsvernetzen
+            Berufsvernetzen
           </span>
         </NavbarBrand>
         <NavbarItem>
           <Button as={Link} variant="light"
-          href="https://meili.mhmdaris15.tech/"
+            href="https://meili.mhmdaris15.tech/"
           >
             Jobs
           </Button>
@@ -120,7 +120,7 @@ export default function NavBar() {
           <Button
             as={Link}
             color="primary"
-            href="/auth"
+            href="/sign-in"
             variant="solid"
             className="hidden sm:flex"
           >
